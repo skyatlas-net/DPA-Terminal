@@ -1,7 +1,7 @@
 # DPA-Terminal
 Node.js Program, connect to Oracle RDBMS, do performance Analyzing Job...
 ## 01. What is DPA-Terminal
-Database Performance Analyzer(Aka: DPA), show Oracle RDBMS's performance issue. In DPA-Terminal, we use Terminal program(ncurses like app) display Current performance view, and we also recall the past performance issure.
+Database Performance Analyzer(Aka: DPA), show Oracle RDBMS's performance issue. In DPA-Terminal, we use Terminal program(ncurses like app) display Current performance view, and we also recall the past performance issue.
 ### Current System-Wide (RAC Supported) Performance Analyze
 [![asciicast](https://asciinema.org/a/241100.svg)](https://asciinema.org/a/241100)
 If you click above Picture and watch the screen cast, you'll find in the terminal application, you can:
