@@ -2,6 +2,7 @@
 Node.js Program, connect to Oracle RDBMS, do performance Analyzing Job...
 ## 01. What is DPA-Terminal
 Database Performance Analyzer(Aka: DPA), show Oracle RDBMS's performance issure. In DPA-Terminal, we use Terminal program(ncurses like app) display Current performance view, and we also recall the past performance issure.
+<video id="gridsess" src="./github-gridsess.mov"></video>
 ## 02. What's DPA-Terminal Depends on
 DPA-Terminal is an Terminal application written in Node.js. To run this application, you need:
 1. Node.js Env.
