@@ -27,7 +27,7 @@ DPA-Terminal is an Terminal application written in Node.js. To run this applicat
 
 ## Installation
 ### Overview
-If you cannot do yourself installation of Oracle Instant Client SDK, Node.js , you should use GUI application, not Terminal ascii like application like this.
+If you cannot do yourself installation of Oracle Instant Client SDK, Node.js , you should use GUI application, not Terminal ascii application like this.
 ### Node.js 
 ([Node.js](https://nodejs.org/en/))
 
@@ -93,13 +93,13 @@ You can create a Linux/Unix user, Changed the user's .bash_profile, Add next lin
 ```
 exec start.sh
 ```
-By doing this, you can limit user can Only use this two node.js application: View Current Oracle RDBMS Performance or Recall History Oracle RDBMS Performance.
+By doing this, you can jail user inside these two node.js applications: View Current Oracle RDBMS Performance or Recall History Oracle RDBMS Performance events.
 ### User Interaction
 * The Application should run in 200*66 Terminal Window -- Only Test in MacOS Terminal.app & iTerm2
 * Support Mouse 
 * Ctrl-C q should Exit
 * Input widget action like "vi" -- when you complete your input, press "ESC" mark the input completion
-* If you want to select something (eg: session), you press "Enter"
+* If you want to select something (eg: session), you move the cursor then press "Enter"
 * In gridsess.js, if you want view SQL Exec Plan, Press "P"
 * In ash.js, you should input a Date time string in specific format
 * after Date time String input, Mouse Click "Radar" button, application should display you a line chart means the whole day RDBMS performance load usage
