@@ -98,10 +98,10 @@ By doing this, you can jail user inside these two node.js applications: View Cur
 * The Application should run in 200*66 Terminal Window -- Only Test in MacOS Terminal.app & iTerm2
 * Support Mouse 
 * Ctrl-C q should Exit
-* Input widget action like "vi" -- when you complete your input, press "ESC" mark the input completion
-* If you want to select something (eg: session), you move the cursor then press "Enter"
+* Input widget action like "vi" -- when you complete your input, press "ESC" marks the input completion
+* If you want to select something (eg: session), you should move the cursor then press "Enter"
 * In gridsess.js, if you want view SQL Exec Plan, Press "P"
 * In ash.js, you should input a Date time string in specific format
-* after Date time String input, Mouse Click "Radar" button, application should display you a line chart means the whole day RDBMS performance load usage
-* after Date time String input, Mouse click "Submit" button, application should recall RDBMS in time range [input_datestr, input_datestr+10mins]
+* After Date time String input, Mouse Click "Radar" button, application should display you a line chart means the whole day's RDBMS performance load usage
+* After Date time String input, Mouse click "Submit" button, application should recall RDBMS in time range [input_datestr, input_datestr+10mins]
 * "n" or "Ctrl-f" looks forward the recall, "p" or "Ctrl-b" looks backward the recall.
