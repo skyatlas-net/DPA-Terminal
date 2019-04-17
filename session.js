@@ -96,9 +96,11 @@ async function getSqlPlanInfo(conn, sqlid, plan_hash_value, btime=undefined, eti
     try {
         let result = undefined;
         if (btime && etime) {
+            // console.log('------ sql1_8 ---------');
             result = await conn.execute(connUtil.sql1_8, [sqlid, plan_hash_value, btime, btime, etime, etime]);
         }
         else {
+            // console.log('------ sql1_9 ---------');
             result = await conn.execute(connUtil.sql1_9, [sqlid, plan_hash_value]);
         }
             

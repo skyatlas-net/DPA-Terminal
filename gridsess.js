@@ -299,7 +299,8 @@ var table6 = grid.set(11, 6, 1, 6, contrib.table, {
     content: 'Blank',
     tags: true,
     fg: 'green',
-    columnWidth: [50, 50, 50],
+    columnSpacing: 2,
+    columnWidth: [35, 35, 35],
 });
 
 // table.focus();
@@ -503,10 +504,12 @@ async function onSessionSelected(node) {
 
     if (_sqlid && connection) {
         plan_info = await sess.getSqlPlanInfo2(connection, _sqlid, _sql_child_number);
+        // console.log(JSON.stringify(plan_info));
         if (plan_info && plan_info.length > 0) {
             plan_info = plan_info[0];
         }
         if (plan_info) {
+            // console.log('----- plan_info'+plan_info+'-'+_sqlid+'-'+_sql_child_number);
             table2.setData({
                 headers: ['OPTIM Mode', 'OPTIM Cost', 'Module', 'Action', 'EXEC#'],
                 data: [
@@ -593,6 +596,9 @@ async function onSessionSelected(node) {
         }
 
 
+    }
+    else {
+        console.log(' no sqlid or connection...');
     }
     screen.render();
 }
